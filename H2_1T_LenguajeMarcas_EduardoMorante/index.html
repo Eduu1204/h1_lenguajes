@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Programación</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .sidebar {
+      background-color: #343a40;
+      padding: 20px;
+      color: #ffffff;
+      height: 100vh; /* Establece la altura completa de la ventana */
+      position: sticky;
+      top: 0;
+    }
+
+    .sidebar h4 {
+      color: #17a2b8;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .main-content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Inicio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">XML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">JSON</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Columna izquierda -->
+      <div class="col-lg-3 col-md-6 sidebar">
+        <div class="mb-4">
+          <h4>Categorías</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <h4>Últimos Posts</h4>
+          <ul>
+            <li><a href="#">Introducción a XML</a></li>
+            <li><a href="#">Manipulación de JSON en JavaScript</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos en Redes Sociales</h4>
+          <!-- Agregar enlaces a tus redes sociales aquí -->
+        </div>
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="col-lg-9 col-md-6 main-content">
+        
+<article>
+    <h2>Introducción a XML</h2>
+  
+    <section>
+      <h3>Historia:</h3>
+      <p>
+        XML (eXtensible Markup Language): XML fue creado por el World Wide Web Consortium (W3C) y su primera versión se publicó en 1998. Este lenguaje de marcado fue diseñado para almacenar y transportar datos de manera legible tanto para humanos como para máquinas. Su flexibilidad y extensibilidad han contribuido a su popularidad en una variedad de aplicaciones.
+      </p>
+    </section>
+  
+    <section>
+      <h3>Normas de uso y Sintaxis:</h3>
+      <p>
+        XML utiliza tags (etiquetas) para definir elementos y atributos, permitiendo la creación de estructuras jerárquicas. La sintaxis básica de XML se compone de apertura y cierre de tags, como se muestra en el siguiente ejemplo:
+      </p>
+      <pre>
+        <code>
+          &lt;persona&gt;
+            &lt;nombre&gt;John&lt;/nombre&gt;
+            &lt;edad&gt;30&lt;/edad&gt;
+          &lt;/persona&gt;
+        </code>
+      </pre>
+      <p>
+        Las normas para el uso de XML se definen en las especificaciones del W3C, que proporcionan pautas para la creación y procesamiento de documentos XML.
+      </p>
+    </section>
+  
+    <section>
+      <h3>Aplicaciones en el ámbito empresarial:</h3>
+      <p>
+        XML se utiliza ampliamente en el ámbito empresarial debido a sus capacidades versátiles. Algunas de las aplicaciones más comunes incluyen:
+      </p>
+      <ul>
+        <li><strong>Integración de sistemas:</strong> XML facilita la comunicación entre sistemas heterogéneos. Permite la transferencia de datos estructurados de manera comprensible y estándar.</li>
+        <li><strong>Bases de datos:</strong> Muchas bases de datos utilizan XML para almacenar y recuperar datos de manera eficiente, proporcionando una forma organizada y legible de gestionar información.</li>
+      </ul>
+    </section>
+  </article>
+  
+<article>
+    <h2>Introducción a JSON</h2>
+  
+    <section>
+      <h3>Historia:</h3>
+      <p>
+        JSON (JavaScript Object Notation): JSON, por otro lado, es un formato de intercambio de datos más reciente. Fue propuesto por Douglas Crockford en 2001 y ganó rápidamente popularidad debido a su simplicidad y fácil comprensión. Aunque tiene sus raíces en JavaScript, se utiliza en una variedad de lenguajes de programación.
+      </p>
+    </section>
+  
+    <section>
+      <h3>Normas de uso y Sintaxis:</h3>
+      <p>
+        JSON utiliza pares clave-valor para representar datos. Su sintaxis es más concisa que la de XML y es fácilmente legible por humanos. Un ejemplo de JSON sería:
+      </p>
+      <pre>
+        <code>
+          {
+            "persona": {
+              "nombre": "John",
+              "edad": 30
+            }
+          }
+        </code>
+      </pre>
+      <p>
+        JSON se ha convertido en un estándar de facto para la comunicación entre servicios web y es ampliamente utilizado en el desarrollo de aplicaciones web y móviles.
+      </p>
+    </section>
+  
+    <section>
+      <h3>Aplicaciones en el ámbito empresarial:</h3>
+      <p>
+        JSON se utiliza en diversas aplicaciones empresariales debido a sus características versátiles. Algunas de las aplicaciones más destacadas incluyen:
+      </p>
+      <ul>
+        <li><strong>APIs y servicios web:</strong> JSON es ampliamente utilizado en la transferencia de datos entre aplicaciones y servicios web. Su sintaxis simple y ligera lo convierte en una elección común para la comunicación entre el cliente y el servidor.</li>
+        <li><strong>Almacenamiento de datos en la nube:</strong> Debido a su naturaleza fácilmente serializable, JSON es ideal para almacenar configuraciones y datos en sistemas de almacenamiento en la nube, como bases de datos NoSQL.</li>
+      </ul>
+    </section>
+  </article>
+  
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

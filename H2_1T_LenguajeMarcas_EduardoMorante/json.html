@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Programación</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .sidebar {
+      background-color: #343a40;
+      padding: 20px;
+      color: #ffffff;
+      height: 100vh; /* Establece la altura completa de la ventana */
+      position: sticky;
+      top: 0;
+    }
+
+    .sidebar h4 {
+      color: #17a2b8;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .main-content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="xml.html">XML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="json.html">JSON</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <!-- Columna izquierda -->
+      <div class="col-lg-3 col-md-6 sidebar">
+        <!-- Añadir imagen a la izquierda -->
+        <img src="json.png" alt="Imagen de ejemplo">
+
+        <div class="mb-4">
+          <h4>Categorías</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <!-- Resto de la columna izquierda -->
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="col-lg-9 col-md-6 main-content">
+        <!-- Artículo JSON -->
+        <article>
+            <h2>Introducción a JSON</h2>
+          
+            <section>
+              <h3>Historia:</h3>
+              <p>
+                JSON (JavaScript Object Notation): JSON, por otro lado, es un formato de intercambio de datos más reciente. Fue propuesto por Douglas Crockford en 2001 y ganó rápidamente popularidad debido a su simplicidad y fácil comprensión. Aunque tiene sus raíces en JavaScript, se utiliza en una variedad de lenguajes de programación.
+              </p>
+            </section>
+          
+            <section>
+              <h3>Normas de uso y Sintaxis:</h3>
+              <p>
+                JSON utiliza pares clave-valor para representar datos. Su sintaxis es más concisa que la de XML y es fácilmente legible por humanos. Un ejemplo de JSON sería:
+              </p>
+              <pre>
+                <code>
+                  {
+                    "persona": {
+                      "nombre": "John",
+                      "edad": 30
+                    }
+                  }
+                </code>
+              </pre>
+              <p>
+                JSON se ha convertido en un estándar de facto para la comunicación entre servicios web y es ampliamente utilizado en el desarrollo de aplicaciones web y móviles.
+              </p>
+            </section>
+          
+            <section>
+              <h3>Aplicaciones en el ámbito empresarial:</h3>
+              <p>
+                JSON se utiliza en diversas aplicaciones empresariales debido a sus características versátiles. Algunas de las aplicaciones más destacadas incluyen:
+              </p>
+              <ul>
+                <li><strong>APIs y servicios web:</strong> JSON es ampliamente utilizado en la transferencia de datos entre aplicaciones y servicios web. Su sintaxis simple y ligera lo convierte en una elección común para la comunicación entre el cliente y el servidor.</li>
+                <li><strong>Almacenamiento de datos en la nube:</strong> Debido a su naturaleza fácilmente serializable, JSON es ideal para almacenar configuraciones y datos en sistemas de almacenamiento en la nube, como bases de datos NoSQL.</li>
+              </ul>
+            </section>
+          </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
